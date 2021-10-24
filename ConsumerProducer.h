@@ -156,7 +156,7 @@ void ConsumerProducer_Class::checkEmpty(){
 	// if all memory spaces are ""
 	// 	means is empty
 	for(int i=0; i<20; i++){
-		if(container[i].size() == 0){
+		if(container[i].size() != 0){
 			empty_semaphore = false;
 			return;
 		}
